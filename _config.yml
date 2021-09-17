@@ -13,6 +13,8 @@ root: https://pgexporter.github.io/
 headers:
     - name: Configuration
       url: https://pgexporter.github.io/configuration.html
+    - name: Metrics
+      url: https://pgexporter.github.io/metrics.html
     - name: News
       url: https://pgexporter.github.io/news.html
     - name: About

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div id="home">
+  <h1>
+    {% for header in site.headers %}
+    <a class="header" href="{{ header.url }}">{{ header.name }}</a>
+    {% endfor %}
+  </h1>
+  <p/>
+
+  <h2>Metrics</h2>
+
+  <h3>Core</h3>
+
+  The core metrics available to the "pg_monitor" user.
+  <p/>
+    
+  <b>General</b><br/>
+
+  <ul>
+    <li>pgexporter_state</li>
+    <li>pgexporter_postgresql_active (server)</li>
+  </ul>
+  <p/>
+  
+  <b>pg_database</b><br/>
+
+  <ul>
+    <li>pgexporter_pg_database_size (server, database)</li>
+  </ul>
+  <p/>
+
+  <b>pg_replication_slots</b><br/>
+
+  <ul>
+    <li>pgexporter_pg_replication_slots_active (server, slot)</li>
+  </ul>
+  <p/>
+
+  <b>pg_settings</b><br/>
+
+  All settings available.
+  <p/>
+
+  
+</div>
