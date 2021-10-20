@@ -32,6 +32,13 @@ layout: default
   </ul>
   <p/>
 
+  <b>pg_locks</b><br/>
+
+  <ul>
+    <li>pgexporter_pg_locks_count (server, database, mode)</li>
+  </ul>
+  <p/>
+
   <b>pg_replication_slots</b><br/>
 
   <ul>
@@ -39,10 +46,77 @@ layout: default
   </ul>
   <p/>
 
-  <b>pg_settings</b><br/>
+  <b>pg_stat_bgwriter</b><br/>
 
-  All settings available.
+  <ul>
+    <li>pgexporter_pg_stat_bgwriter_buffers_alloc (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_buffers_backend (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_buffers_backend_fsync (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_buffers_checkpoint (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_buffers_clean (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_checkpoint_sync_time (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_checkpoint_write_time (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_checkpoints_req (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_checkpoints_timed (server)</li>
+    <li>pgexporter_pg_stat_bgwriter_maxwritten_clean (server)</li>
+  </ul>
   <p/>
 
+  <b>pg_stat_database</b><br/>
+
+  <ul>
+    <li>pgexporter_pg_stat_database_blk_read_time (server, database)</li>
+    <li>pgexporter_pg_stat_database_blk_write_time (server, database)</li>
+    <li>pgexporter_pg_stat_database_blks_hit (server, database)</li>
+    <li>pgexporter_pg_stat_database_blks_read (server, database)</li>
+    <li>pgexporter_pg_stat_database_checksum_failures (server, database)</li>
+    <li>pgexporter_pg_stat_database_deadlocks (server, database)</li>
+    <li>pgexporter_pg_stat_database_temp_files (server, database)</li>
+    <li>pgexporter_pg_stat_database_temp_bytes (server, database)</li>
+    <li>pgexporter_pg_stat_database_tup_returned (server, database)</li>
+    <li>pgexporter_pg_stat_database_tup_fetched (server, database)</li>
+    <li>pgexporter_pg_stat_database_tup_inserted (server, database)</li>
+    <li>pgexporter_pg_stat_database_tup_updated (server, database)</li>
+    <li>pgexporter_pg_stat_database_tup_deleted (server, database)</li>
+    <li>pgexporter_pg_stat_database_xact_commit (server, database)</li>
+    <li>pgexporter_pg_stat_database_xact_rollback (server, database)</li>
+    <li>pgexporter_pg_stat_database_conflicts (server, database)</li>
+    <li>pgexporter_pg_stat_database_numbackends (server, database)</li>
+  </ul>
+  <p/>
+
+  <b>pg_stat_database_conflicts</b><br/>
+
+  <ul>
+    <li>pgexporter_pg_stat_database_conflicts_confl_tablespace (server, database)</li>
+    <li>pgexporter_pg_stat_database_conflicts_confl_lock (server, database)</li>
+    <li>pgexporter_pg_stat_database_conflicts_confl_snapshot (server, database)</li>
+    <li>pgexporter_pg_stat_database_conflicts_confl_bufferpin (server, database)</li>
+    <li>pgexporter_pg_stat_database_conflicts_confl_deadlock (server, database)</li>
+  </ul>
+  <p/>
+
+  <b>pg_settings</b><br/>
+
+  <ul>
+    <li>All settings available (server)</li>
+  </ul>
+
+  <p/>
+
+  <h3>Extended</h3>
+
+  The extended metrics requires the <a href="https://github.com/pgexporter/pgexporter_ext">pgexporter_ext</a> extension.
+
+  <ul>
+    <li>pgexporter_used_disk_space_data (server)</li>
+    <li>pgexporter_free_disk_space_data (server)</li>
+    <li>pgexporter_total_disk_space_data (server)</li>
+    <li>pgexporter_used_disk_space_wal (server)</li>
+    <li>pgexporter_free_disk_space_wal (server)</li>
+    <li>pgexporter_total_disk_space_wal (server)</li>
+  </ul>
+
+  <p/>
   
 </div>
