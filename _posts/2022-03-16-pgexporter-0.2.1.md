@@ -22,4 +22,4 @@ This is an enhancement and bug fix release of pgexporter.
 ### Download
 
 * [Source code](https://github.com/pgexporter/pgexporter/releases/download/0.2.1/pgexporter-0.2.1.tar.gz)
-* [RPM](https://yum.postgresql.org) for Fedora 33/34, RHEL 8.x and CentOS 8.x
+* [RPM](https://yum.postgresql.org) for Fedora 34/35, RHEL 8.x and Rocky Linux 8.x
