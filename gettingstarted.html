@@ -16,7 +16,7 @@ layout: default
     using "pgexporter -?". You should see
 
     <pre>
-pgexporter 0.3.0
+pgexporter 0.3.1
   Prometheus exporter for PostgreSQL
 
 Usage:
@@ -69,7 +69,7 @@ user = pgexporter
     The "pgexporter" user must have the "pg_monitor" role and have access to the "postgres" database,
     so for example
     <pre>
-CREATE ROLE pgexporter WITH LOGIN PASSWORD 'secretpassword';
+CREATE ROLE pgexporter WITH NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION LOGIN PASSWORD 'secretpassword';
 GRANT pg_monitor TO pgexporter;
     </pre>
 
@@ -114,7 +114,7 @@ pgexporter -c pgexporter.conf -u pgexporter_users.conf
     You can see the commands it supports by using "pgexporter-cli -?" which will give
 
     <pre>
-pgexporter-cli 0.3.0
+pgexporter-cli 0.3.1
   Command line utility for pgexporter
 
 Usage:
@@ -167,7 +167,7 @@ echo $?
     You can see the commands it supports by using "pgexporter-admin -?" which will give
 
     <pre>
-pgexporter-admin 0.3.0
+pgexporter-admin 0.3.1
   Administration utility for pgexporter
 
 Usage:

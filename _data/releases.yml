@@ -16,3 +16,6 @@
 - name: pgexporter 0.3.0
   date: 2022-09-21
   announce: release/announcement/2022/09/21/pgexporter-0.3.0.html
+- name: pgexporter 0.3.1
+  date: 2022-11-02
+  announce: release/announcement/2022/11/02/pgexporter-0.3.1.html
