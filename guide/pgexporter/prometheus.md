@@ -1,10 +1,6 @@
 # Prometheus
 
-<<<<<<< HEAD
-[Prometheus]() can be configured with `pgexporter` as a data source.
-=======
 [Prometheus](https://prometheus.io/) can be configured with `pgexporter` as a data source.
->>>>>>> 7bc1a03 (Revamp)
 
 An example config file for prometheus, `prometheus.yml`, can be:
 ```yml

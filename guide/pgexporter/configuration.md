@@ -100,11 +100,7 @@ $ psql
 ```
 
 and locate the `pg_hba.conf` file using:
-<<<<<<< HEAD
-```psql
-=======
 ```sql
->>>>>>> 7bc1a03 (Revamp)
 SHOW hba_file;
 ```
 
@@ -184,26 +180,7 @@ port = 5432
 user = pgexporter
 ```
 
-<<<<<<< HEAD
-<!-- ### Breakdown
-
-Breakdown of this configuration file:
-
-- In the main section `[pgexporter]`:
-  - Setup `pgexporter` to listen all network addresses with `host = *`.
-  - We enable `pgexporter` to expose Prometheus metrics on port `5002` using `metrics = 5002`.
-  - Specify logging information using `log_type` as a `file`, `log_level` as `info` and `log_path` as `/tmp/pgexporter.log`.
-  - Specify location of the `unix_socket_dir` as `/tmp`, which used for management operations.
-- Then servers are defined as sections:
-  - In the `[primary]` server:
-    - Specify the host of the server like `host = localhost`.
-    - The port where the PostgreSQL server is listening to using `port = 5432`.
-    - And the user that you want to access it with using `user = pgexporter`. This user must have the `pg_monitor` role (see [here](#pg-monitor)). -->
-
-A breakdown of this configuration file can be viewed [here](#) for understanding its components.
-=======
 A breakdown of this configuration file can be viewed [here](../../docs/pgexporter/configuration.md#pgexporter-configuration) for understanding its components.
->>>>>>> 7bc1a03 (Revamp)
 
 ## Running pgexporter
 
