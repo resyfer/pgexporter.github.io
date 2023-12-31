@@ -1,6 +1,6 @@
 # `pgexporter-cli`
 
-`pgexporter-cli` exists to control `pgexporter`, especially when `pgexporter` is [running as a daemon](./command_line_flags.md#run-as-a-daemon).
+`pgexporter-cli` exists to control `pgexporter`, especially when `pgexporter` is [running as a daemon](./pgexporter/command_line_flags.md#run-as-a-daemon).
 
 Usage:
 ```
@@ -11,12 +11,12 @@ pgexporter-cli -V
 ```
 
 Commands:
-- [`is-alive`](#): Check if `pgexporter` is alive.
-- [`stop`](#): Stop `pgexporter`.
-- [`status`](#): Status of `pgexporter`.
-- [`details`](#): Alias for `status`.
-- [`reload`](#): Reload the configuration.
-- [`reset`](#): Reset the Prometheus statistics.
+- [`is-alive`](#is-alive): Check if `pgexporter` is alive.
+- [`stop`](#stop): Stop `pgexporter`.
+- [`status`](#status): Status of `pgexporter`.
+- [`details`](#details): Alias for `status`.
+- [`reload`](#reload): Reload the configuration.
+<!-- - `reset`: Reset the Prometheus statistics. -->
 
 :::tip NOTE
 The notation standard used for describing usage can be found [here](http://docopt.org).
@@ -89,7 +89,7 @@ pgexporter-cli 0.4.0
 _Description_: Checks if `pgexporter` is successfully running.
 
 :::tip NOTE
-It needs [`verbose`](#) flag to output anything.
+It needs [`verbose`](#verbose) flag to output anything.
 :::
 
 :::code-group
@@ -214,7 +214,7 @@ section TODO
 
 _Description_:
 
-Specify the [`pgexporter.conf` file](./configuration.md).
+Specify the [`pgexporter.conf` file](./pgexporter/configuration.md).
 
 :::code-group
 ```sh [Usage]
@@ -271,7 +271,7 @@ $ pgexporter-cli -p 8080 # -h <host> [options] [command]
 :::
 
 :::warning NOTE
-The `port` mentioned here is the port at which [**management** is open](./configuration.md).
+The `port` mentioned here is the port at which [**management** is open](./pgexporter/configuration.md).
 :::
 
 ### Username
@@ -297,7 +297,7 @@ If you do not provide your credentials in the arguments, you will be prompted to
 :::
 
 :::tip NOTE
-Steps for registering a username and password to access `pgexporter` through `pgexporter-cli` can be [viewed here](#).
+Steps for registering a username and password to access `pgexporter` through `pgexporter-cli` can be [viewed here](../guide/pgexporter/configuration.md#user-vault).
 :::
 
 ### Password
@@ -322,7 +322,7 @@ If you do not provide your credentials in the arguments, you will be prompted to
 :::
 
 :::tip NOTE
-Steps for registering a username and password to access `pgexporter` through `pgexporter-cli` can be [viewed here](#).
+Steps for registering a username and password to access `pgexporter` through `pgexporter-cli` can be [viewed here](#(../guide/pgexporter/configuration.md#user-vault)).
 :::
 
 ### Log File

@@ -23,7 +23,7 @@ This is a feature release of pgexporter.
 
 ## pgexporter_ext
 
-Initial release of [pgexporter_ext]() for extended metrics support.
+Initial release of [pgexporter_ext](https://github.com/pgexporter/pgexporter_ext) for extended metrics support.
 
 ## Download
 

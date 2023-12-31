@@ -8,8 +8,8 @@ pgexporter -V
 ```
 
 Compulsory Flags:
-- [`-c` or `--config` `<config-file>`](#config-file): Specify the [`pgexporter.conf`](#) file path.
-- [`-u` or `--users` `<users-file>`](#users-file): Specify the [`pgexporter_users.conf`](#) file path.
+- [`-c` or `--config` `<config-file>`](#config-file): Specify the [`pgexporter.conf`](#config-file) file path.
+- [`-u` or `--users` `<users-file>`](#users-file): Specify the [`pgexporter_users.conf`](#users-file) file path.
 
 Options:
 - [`-A` or `--admins` `<admins-file>`](#admins-file): Set the path for Admins' file.
@@ -130,11 +130,12 @@ $ pgexporter -d # -c <config-file> -u <users-file> [options]
 ```
 
 ### Enable Only Specific Collectors
-If you need only specific collectors (from within both [internal](#) and [custom metrics](#)):
+If you need only specific collectors (from within both [internal](./metrics.md#internal-metrics) and [custom metrics](./metrics.md#custom-metrics)):
+
 ```sh
 $ pgexporter -C name,[name...] # -c <config-file> -u <users-file> [options]
 ```
 
 where the argument is` is a _comma-separated list_ of one or more collector names.
 
-This will disabled all other configured collectors except [general metrics](#).
+This will disabled all other configured collectors except [general metrics](./metrics.md#internal-metrics).

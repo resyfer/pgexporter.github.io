@@ -100,7 +100,11 @@ $ psql
 ```
 
 and locate the `pg_hba.conf` file using:
+<<<<<<< HEAD
 ```psql
+=======
+```sql
+>>>>>>> 7bc1a03 (Revamp)
 SHOW hba_file;
 ```
 
@@ -180,6 +184,7 @@ port = 5432
 user = pgexporter
 ```
 
+<<<<<<< HEAD
 <!-- ### Breakdown
 
 Breakdown of this configuration file:
@@ -196,6 +201,9 @@ Breakdown of this configuration file:
     - And the user that you want to access it with using `user = pgexporter`. This user must have the `pg_monitor` role (see [here](#pg-monitor)). -->
 
 A breakdown of this configuration file can be viewed [here](#) for understanding its components.
+=======
+A breakdown of this configuration file can be viewed [here](../../docs/pgexporter/configuration.md#pgexporter-configuration) for understanding its components.
+>>>>>>> 7bc1a03 (Revamp)
 
 ## Running pgexporter
 

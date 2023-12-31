@@ -979,7 +979,7 @@ metrics:
 
 - `queries` are a list of query alternatives (more on this [below](#queries)).
 - `tag`: This specifies the tag of the metics (more on this [below](#columns)).
-- `collector`: This specifies a `collector` name for the metric. This allows you to disable a collector by using the `-C` flag (see [here](#) for details).
+- `collector`: This specifies a `collector` name for the metric. This allows you to disable a collector by using the `-C` flag (see [here](./command_line_flags.md#enable-only-specific-collectors) for details).
 - `sort` (*optional*): This specifies how the output of each metric will be sorted. Currently there are two supported values:
   - `name` (*default*): This will sort the output according to server's name.
   - `data`: This will sort the output according to the data of the first column of the SQL query that will be run on the server (more on this [below](#queries)).
